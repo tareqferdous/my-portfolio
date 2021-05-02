@@ -1,0 +1,24 @@
+@import './styles/navbar';
+@import './styles/typography';
+// @import './styles//title';
+@import './styles/layout';
+
+ // Google fonts 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&display=swap');
+
+//Global css
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #ffffff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+}
+
+span{
+    color: #037FFF;
+}

@@ -1,0 +1,22 @@
+.App{
+    .topBar{
+        width: 100%;
+        background-color: #191D2B;
+        position: fixed;
+
+    }
+    .main-content{
+        width: 100%;
+        background-color: #10121B;
+        min-height: 100vh;
+        background-image: url(../img/dots.svg);
+        color: honeydew;
+        
+        
+        @media screen and (max-width: 1000px){
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+

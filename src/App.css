@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Servives */
+.services {
+    background-color: #121f35;
+    padding: 50px 0;
+    color: #fff;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .common {
+    width: 33.33333333333333%;
+    margin: 20px auto;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .heading {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #ff4a57;
+    font-size: 16px;
   }
-}
+  .mainHeader {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .mainContent {
+    font-size: 16px;
+    color: #dfdfdf;
+  }
+  .commonBorder {
+    background: #ff4a57;
+    height: 3px;
+    width: 100px;
+    margin: 30px auto;
+  }
+  
+  .services__box {
+    padding: 40px;
+    background: #23263a;
+    color: #fff;
+    margin: 20px;
+    transition: all 0.5s linear;
+  }
+  .services__box:hover {
+    background: #ff4a57;
+    cursor: pointer;
+  }
+  .commonIcons {
+    font-size: 40px;
+    color: #ff4a57;
+    margin-bottom: 15px;
+  }
+  .services__box:hover .commonIcons {
+    color: #fff;
+  }
+  .services__box-header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .services__box-p {
+    font-size: 14px;
+    color: #dfdfdf;
+  }
+
+  .col-4{
+      width: 33.33%;
+  }

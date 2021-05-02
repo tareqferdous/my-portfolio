@@ -1,0 +1,36 @@
+import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import '../../src/styles/Navbar.css'
+
+const NavBar = () => {
+  return (
+    <Navbar style={{backgroundColor: '#0a192f'}} expand="lg">
+        <div class="container">
+        <Navbar.Brand ><h1 className="text-white">Portfolio</h1></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <ul className="navbar-nav ml-auto">
+                <li className="nav-item active text-white">
+                    <Link className="nav-link mr-3 text-white" to="/">Home <span className="sr-only">(current)</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link mr-3 text-white"  to="/about">About</Link>
+                </li>   
+                <li className="nav-item">
+                    <Link className="nav-link mr-3 text-white" to="/portfolio">Portfolio</Link>
+                </li> 
+                <li className="nav-item">
+                    <Link className="nav-link mr-3 text-white" to="/blogs">Blogs</Link>
+                </li> 
+                <li className="nav-item">
+                    <Link className="nav-link mr-3 text-white" to="/contact">Contact Us</Link>
+                </li> 
+                </ul>  
+        </Navbar.Collapse>
+        </div>
+    </Navbar>
+  );
+};
+
+export default NavBar;
