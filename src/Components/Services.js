@@ -14,7 +14,7 @@ const Services = () => {
   const [state] = React.useState([
     {
       id: 1,
-      icon: <FontAwesomeIcon icon={faCode} className="icon fb" />,
+      icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faCode} className="icon fb" />,
       heading: "Web Development",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -22,7 +22,7 @@ const Services = () => {
     },
     {
       id: 2,
-      icon: <FontAwesomeIcon icon={faMobile} className="icon fb" />,
+      icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faMobile} className="icon fb" />,
       heading: "Web Application",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -30,7 +30,7 @@ const Services = () => {
     },
     {
       id: 3,
-      icon: <FontAwesomeIcon icon={faLaptop} className="icon fb" />,
+      icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faLaptop} className="icon fb" />,
       heading: "Web Design",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -52,7 +52,7 @@ const Services = () => {
           <div className="row bgMain">
             {state.map((info) => (
               <div className="col-md-4 bgMain">
-                <div className="services__box">
+                <div className="services__box text-center">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>

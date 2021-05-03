@@ -5,7 +5,7 @@ import '../../src/styles/Navbar.css'
 
 const NavBar = () => {
   return (
-    <Navbar style={{backgroundColor: '#0a192f'}} expand="lg">
+    <Navbar className="nav" style={{backgroundColor: '#0a192f'}} expand="lg">
         <div class="container">
         <Navbar.Brand ><h1 className="text-white">Portfolio</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

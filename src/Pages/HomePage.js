@@ -9,7 +9,7 @@ import AboutPage from './AboutPage';
 
 function HomePage() {
     return (
-        <div style={{paddingTop: "7rem", margin: '0 auto', backgroundColor: '#0a192f'}} className="homePage">
+        <div style={{paddingTop: "7rem", margin: '0 auto', backgroundColor: '#0a192f', zIndex:""}} className="homePage">
            <div class="container">
            <div class="row">
                 <div class="col-md-6">
