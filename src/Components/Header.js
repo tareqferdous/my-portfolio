@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
 
-<div className="header-wrapper pt-4">
+<div className="header-wrapper" style={{paddingTop: "70px"}}>
             <div class="main-info text-center">
                 <h1 className="pb-2">Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
                 <Typed
