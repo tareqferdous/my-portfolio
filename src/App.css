@@ -73,7 +73,7 @@
       background: url(./img/back.jpg) no-repeat;
       background-size: cover;
       background-position: center;
-      height: 82vh;
+      height: 83vh;
   }
   .header-wrapper::before{
     position: absolute;
@@ -303,9 +303,10 @@
 }
 
 .effect:hover{
-    background: #1a0f3d;
+    background: #27185a;
    
-    box-shadow: 0 8px 20px #1a0f3d;
+    box-shadow: 0 8px 20px #27185a;
+    color: #fff;
     transform: translateY(-20px);
     transition: .4s ease-in-out;
 }
