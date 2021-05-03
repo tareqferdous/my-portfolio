@@ -13,7 +13,7 @@ const Header = () => {
 <div className="header-wrapper">
             <div class="main-info text-center">
                 <h1 className="pb-2  pt-5">Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
-                <Typed
+                <Typed 
                     className="typed-text"
                     strings={["Front-End Web Developer", "MERN Stack Developer", "Engineer"]}
                     typeSpeed={40}
@@ -21,7 +21,7 @@ const Header = () => {
                     loop
                 />
                 
-                <p className="text-info" style={{color: "white", fontSize:"18px", width: '65%', textAlign:"center", paddingTop: '20px'}}>I count myself as a hardworking person. To pursue a challenging career in a
+                <p className="" style={{color: "white", fontSize:"18px", width: '65%', textAlign:"center", paddingTop: '20px'}}>I count myself as a hardworking person. To pursue a challenging career in a
                 competitive world where enthusiasm, honesty, hard work and passion will support me to
                 grow myself as well as utilize my knowledge and expertise for
                 professional development in the relevant field.</p>
