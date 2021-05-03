@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <Navbar className="nav" style={{backgroundColor: '#0a192f'}} expand="lg">
         <div class="container">
-        <Navbar.Brand ><h1 className="text-white">Portfolio</h1></Navbar.Brand>
+        <Navbar.Brand ><h3 className="text-white">Portfolio</h3></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <ul className="navbar-nav ml-auto">
