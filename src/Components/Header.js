@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
 
-<div className="header-wrapper">
+<div className="header-wrapper pt-5">
             <div class="main-info text-center">
                 <h1 className="pb-3">Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
                 <Typed
