@@ -17,7 +17,7 @@ const Header = () => {
                     loop
                 />
                 
-                <p style={{color: '#fff', width: '50%', textAlign:"center", paddingTop: '25px'}}>I count myself as a hardworking person. To pursue a challenging career in a
+                <p className="text-info" style={{color: '#fff', width: '65%', textAlign:"center", paddingTop: '25px'}}>I count myself as a hardworking person. To pursue a challenging career in a
                 competitive world where enthusiasm, honesty, hard work and passion will support me to
                 grow myself as well as utilize my knowledge and expertise for
                 professional development in the relevant field.</p>
