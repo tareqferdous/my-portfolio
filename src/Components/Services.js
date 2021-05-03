@@ -44,7 +44,7 @@ const Services = () => {
           <div className="common">
             <h3 className="heading">{header.mainHeader}</h3>
             <h1 className="mainHeader">{header.subHeading}</h1>
-            <p className="mainContent">{header.text}</p>
+            {/* <p className="mainContent">{header.text}</p> */}
             <div className="commonBorder"></div>
           </div>
 

@@ -14,12 +14,12 @@ const AboutPage = () => {
             <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>
             <div className="skills-content">
                 <div className="text-white column left">
-                    <div className="me"><img className="w-50 img-fluid t" style={{border: '2px solid black', borderRadius:'10px'}} src={me} alt=""/></div>
+                    <div className="me"><img className="w-50 img-fluid" style={{border: '2px solid black', borderRadius:'10px', display:'block', margin: '0 auto'}} src={me} alt=""/></div>
                    
-                    <h3 style={{color:" #1CC7C1"}}>My creative skills & experiences.</h3>
-                    <p>For the past 1 years, I've been developing applications for the web using mostly PHP. What I do as every day there is something new and exciting to learn
+                    <h3 style={{color:" #1CC7C1", textAlign: 'center'}}>My creative skills & experiences.</h3>
+                    <p style={{color:" #fff", textAlign: 'center'}}>For the past 1 years, I've been developing applications for the web using mostly PHP. What I do as every day there is something new and exciting to learn
 I graduated from University of Asia Pacific where I studied web development in a couser named Software Engineering. While I was at university I worked part time for some individual that helped me to further hone in my skills as a developer.</p>
-<div><button style={{ borderRadius:'5px'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div>
+<div className="text-center"><button style={{ borderRadius:'5px'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div>
 {/* 
                         <div className="icons">
                             <a className="icon-holder">
