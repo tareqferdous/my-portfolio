@@ -10,7 +10,7 @@ const BlogData = [
     {
         title: 'React',
         description: "The most important lessons working with React",
-        pic: 'https://lh3.googleusercontent.com/proxy/D-_e3rdni0KlpIRdj8Bo3ev7HGDA4BquCcEeOQpbfU3reKDGR2cPPqzENLSP6BoHpgn7A1kuTdpmvFQYAqZavFT0W80ZCAsYTcTYNA-4SxPzKcBTcnY',
+        pic: 'https://dejanvasic.files.wordpress.com/2020/06/react-img.jpg',
         live: 'https://medium.com/free-code-camp/mindset-lessons-from-a-year-with-react-1de862421981',
     },
     {
