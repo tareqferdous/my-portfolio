@@ -21,7 +21,7 @@ const AboutPage = () => {
                     <p style={{ fontSize: '16px'}}>Profile: Front-End Developer</p>
                     <p style={{ fontSize: '16px'}}>Email: tareqferdous10@gmail.com</p>
                     <p style={{color:"#C0C0C0", fontSize: '16px'}}>For the past 1 year, I've been developing applications for the web using mostly React and NodeJs. What I do as every day there is something new and exciting to learn
-I graduated from University of Asia Pacific where I studied web development in a course named Software Engineering. While I was at university I worked part time for some individual that helped me to further hone in my skills as a developer.</p>
+I graduated from University of Asia Pacific where I studied web development in a course named Software Engineering. While I was at university I worked part time for some individual that helped me to grow as a developer.</p>
 <div><button style={{ borderRadius:'5px'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div>
 {/* 
                         <div className="icons">
