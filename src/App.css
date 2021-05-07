@@ -2,7 +2,7 @@
 .services {
     background-color: #121f35;
     padding: 50px 0;
-    color: #fff;
+    color: lightseagreen;
   }
   
   .common {
@@ -315,7 +315,7 @@
 /* contact */
 
 .contact{
-    background-image: url(./img/contact1.jpg);
+    background-color: #0a192f;
     background-size: cover;
     background-repeat: no-repeat center;
     position: relative;
@@ -327,7 +327,6 @@
     top:0;
     width: 100%;
     height: 100%;
-    background: rgb(12, 11, 27);
     opacity: .8;
     z-index: -1;
 }
@@ -384,4 +383,35 @@
 }
 .copyRight{
     color: darkgrey;
+}
+
+/* Issue fixed */
+.about-wrapper{
+    position: relative;
+   
+    height: 90vh;
+}
+
+.about-info{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.portfolio-wrapper{
+    position: relative;
+   
+    height: 70vh;
+}
+
+.portfolio-info{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }

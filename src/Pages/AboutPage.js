@@ -7,8 +7,8 @@ import me from '../img/me.jpg';
 
 const AboutPage = () => {
     return (
-        <section className="skills pt-5 pb-5" id="skills" style={{backgroundColor: '#121f35'}}>
-        <div className="container">
+        <section className="skills pt-5 pb-5 about-wrapper" id="skills" style={{backgroundColor: '#121f35'}}>
+        <div className="container about-info">
             <div className="row">
             <div className="max-width">
             <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>

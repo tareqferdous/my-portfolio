@@ -23,7 +23,7 @@ const BlogData = [
 
 const BlogsPage = () => {
     return (
-        <section className="py-5 " style={{background:'#0a192f'}}>
+        <section className="py-5 portfolio-wrapper" style={{background:'#0a192f'}}>
             <div className="text-center pb-3">
             <h2 className=" pb-3" style={{color: '#1CC7C1'}}>Recent Blogs</h2>
             </div>

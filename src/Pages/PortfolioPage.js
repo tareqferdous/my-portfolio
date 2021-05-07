@@ -27,12 +27,12 @@ const portfolioData = [
 
 const PortfolioPage = () => {
     return (
-        <section className="py-5 " style={{background:'#0a192f'}}>
-            <div className="text-center pb-3">
+        <section className="py-5 portfolio-wrapper" style={{background:'#0a192f'}}>
+            <div className="text-center pb-3 ">
             <h2 className=" pb-3" style={{color: '#1CC7C1'}}>My Recent Works</h2>
             </div>
             <div className="container d-flex justify-content-center">
-                <div className="row">
+                <div className="row ">
                     {
                         portfolioData.map(details => <PortfolioDetails details={details}></PortfolioDetails>)
                     }
