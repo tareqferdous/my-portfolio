@@ -14,7 +14,7 @@ const AboutPage = () => {
             <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>
             <div className="skills-content">
                 <div className="text-white column left">
-                    <div><img className="w-50 img-fluid" style={{border: '2px solid black', borderRadius:'10px',}} src={me} alt=""/></div>
+                    <div><img className="w-50 img-fluid" style={{border: '2px solid golden', borderRadius:'10px',}} src={me} alt=""/></div>
                    
                     {/* <h3 style={{color:" #1CC7C1", textAlign: 'center'}}>My creative skills & experiences.</h3> */}
                     <p style={{ fontSize: '16px'}}>Name: Tareq Ferdous</p>

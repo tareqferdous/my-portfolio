@@ -224,6 +224,9 @@
     .text-info {
         width: 100%;
     }
+    .about-wrapper{
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -239,6 +242,9 @@
     }
     .text-info {
         width: 100%;
+    }
+    .about-wrapper{
+        padding-bottom: 100px;
     }
 }
 
@@ -386,32 +392,26 @@
 }
 
 /* Issue fixed */
-.about-wrapper{
+/* .about-wrapper{
     position: relative;
    
-    height: 90vh;
-}
+    ;
+} */
 
-.about-info{
+/* .about-info{
     position: absolute;
-    top: 1%;
-    left: 0;
-    right: 0;
-    left: 0;
+    top: 0;
+    
     z-index: 1;
-}
+} */
 
 .portfolio-wrapper{
     position: relative;
    
-    height: 70vh;
 }
 
 .portfolio-info{
     position: absolute;
-    top: 1%;
-    left: 0;
-    right: 0;
-    left: 0;
+   
     z-index: 1;
 }
