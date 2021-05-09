@@ -38,7 +38,7 @@ management have led to company success.</p>
             </div>
         </div>
         <div className="footer text-center">
-            <small>copyright Orange labs 2020</small>
+            <small style={{color: '#0a192', }}>copyright Orange labs 2020</small>
         </div>
         </div>
     </div>
