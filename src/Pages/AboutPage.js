@@ -17,7 +17,7 @@ const AboutPage = () => {
                     <div><img className="w-50 img-fluid" style={{border: '2px solid golden', borderRadius:'10px',}} src={me} alt=""/></div>
                    
                     {/* <h3 style={{color:" #1CC7C1", textAlign: 'center'}}>My creative skills & experiences.</h3> */}
-                    <p style={{ fontSize: '16px'}}>Name: Tareq Ferdous</p>
+                    <p style={{ fontSize: '16px', paddingTop: '15px'}}>Name: Tareq Ferdous</p>
                     <p style={{ fontSize: '16px'}}>Profile: Front-End Developer</p>
                     <p style={{ fontSize: '16px'}}>Email: tareqferdous10@gmail.com</p>
                     <p style={{color:"#C0C0C0", fontSize: '16px'}}>For the past 1 year, I've been developing applications for the web using mostly React and NodeJs. What I do as every day there is something new and exciting to learn
