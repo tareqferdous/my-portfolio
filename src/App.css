@@ -70,7 +70,7 @@
 
   .header-wrapper{
       position: relative;
-      background: url(./img/back.jpg) no-repeat;
+      background: url(./img/back5.jpg) no-repeat;
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -109,7 +109,7 @@
 /* typed text */
 
 .typed-text{
-    font-size: 20px;
+    font-size: 22px;
     color: orange ;
 }
 

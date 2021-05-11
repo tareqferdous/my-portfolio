@@ -30,7 +30,7 @@ const Header = () => {
             {/* <div className="text-center pt-2"><button style={{ borderRadius:'5px',cursor: 'pointer'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div> */}
 
             <div className="icons">
-                            <a className="icon-holder">
+                            <a  className="icon-holder">
                                 <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
                             </a>
                             <a  className="icon-holder">
