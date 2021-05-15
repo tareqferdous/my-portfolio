@@ -70,7 +70,7 @@
 
   .header-wrapper{
       position: relative;
-      background: url(./img/back5.jpg) no-repeat;
+      background: url(./img/josh-sorenson-P_K20Fdu7ZQ-unsplash.jpg) no-repeat;
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -111,6 +111,7 @@
 .typed-text{
     font-size: 22px;
     color: orange ;
+    font-weight:500;
 }
 
 /* particles */
