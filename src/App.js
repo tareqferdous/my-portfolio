@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import React, {useState, useEffect} from 'react';
 import NavBar from './Components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './Pages/HomePage';
@@ -17,11 +18,43 @@ import Services from './Components/Services';
 import Header from './Components/Header';
 import Particles from 'react-particles-js';
 import Footer from './Components/Footer';
+import ClipLoader from "react-spinners/ClipLoader";
+import { css } from "@emotion/core";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    }, 5000)
+  },[])
+
+  const override = css`
+  display: flex;
+  margin: 250px auto;
+  border-color: red;
+  padding: 50px;
+`;
+
   return (
-    <div className="App"> 
-    <Particles
+    <div className="App">
+
+      {
+        loading ?
+
+        <ClipLoader 
+        css={override}
+          size = {30}
+          color = {"#36D7B7"}
+          loading = {loading}
+        />
+
+        :
+
+        <div class="content">
+           <Particles
               params={{
                 particles: {
                   number: {
@@ -40,11 +73,9 @@ function App() {
                   }
                 }
               }}
-            />  
-      <NavBar></NavBar>
-    
-      <div>     
-        <div class="content">
+            /> 
+          <NavBar></NavBar>
+         
           <Switch>
           <Route exact path="/">
             
@@ -71,11 +102,16 @@ function App() {
             <Footer></Footer>
             </Route>
             <Route path="/contact">
-            <ContactPage></ContactPage>
+            <ContactPage></ContactPage> 
             <Footer></Footer>
             </Route>
           </Switch>
         </div>
+        
+      } 
+
+      <div>     
+        
       </div>
     </div>
   );
