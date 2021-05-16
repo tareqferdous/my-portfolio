@@ -1,7 +1,35 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import {useInView} from 'react-intersection-observer';
+import {useEffect} from 'react';
+import {useAnimation} from 'framer-motion';
+import { motion } from "framer-motion";
 
 const ContactPage = () => {
+
+    const {ref, inView} = useInView({
+        threshold: 0.2
+      });
+      const animation = useAnimation();
+    
+      useEffect(()=>{
+        if(inView){
+          animation.start({
+            opacity: 1,
+            
+            // x: 0,
+            transition: {
+              type: 'spring', duration: 1, delay: 0.7, bounce: 0.3
+            }
+          });
+        }
+        if(!inView){
+          animation.start({opacity: 0})
+        }
+    
+        console.log("use effect hook, inView = ", inView);
+      }, [inView]);
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -17,9 +45,9 @@ const ContactPage = () => {
 
     return (
         <div className="contact">
-        <div className="container contact-content">
+        <div ref={ref} className="container contact-content">
             <h2 className="pb-4" style={{color:'lightSalmon', textAlign: 'center'}}>Contact Me</h2>
-        <div className="row mb-3">
+        <motion.div  animate={animation} className="row mb-3">
             <div className="col-md-4 offset-md-1 mt-5">
                 <h3>Let us handle your work, professionally.</h3>
                 <p>I strive to maintain accuracy and consistency in task completion, individual performance and
@@ -36,7 +64,7 @@ management have led to company success.</p>
                     <button className="btn btn-primary">Send</button>
                 </form>
             </div>
-        </div>
+        </motion.div>
         <div className="footer text-center">
             <small style={{color: '#0a192', }}>copyright Orange labs 2020</small>
         </div>

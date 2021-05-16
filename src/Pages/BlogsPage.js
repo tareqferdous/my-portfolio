@@ -1,5 +1,10 @@
 import React from 'react';
 import BlogDetails from '../Components/BlogDetails';
+import { motion } from "framer-motion";
+import {useInView} from 'react-intersection-observer';
+import {useEffect} from 'react';
+import {useAnimation} from 'framer-motion';
+
 const BlogData = [
     {
         title: 'JavaScript',
@@ -22,17 +27,39 @@ const BlogData = [
 ]
 
 const BlogsPage = () => {
+
+    const {ref, inView} = useInView({
+        threshold: 0.2
+      });
+      const animation = useAnimation();
+    
+      useEffect(()=>{
+        if(inView){
+          animation.start({
+            x: 0,
+            transition: {
+              type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
+            }
+          });
+        }
+        if(!inView){
+          animation.start({x: '-100vw'})
+        }
+    
+        console.log("use effect hook, inView = ", inView);
+      }, [inView]);
+
     return (
         <section className="py-5 portfolio-wrapper" style={{background:'#0a192f'}}>
             <div className="text-center pb-3">
             <h2 className=" pb-3" style={{color: '#1CC7C1'}}>Recent Blogs</h2>
             </div>
-            <div className="container d-flex justify-content-center">
-                <div className="row">
+            <div ref={ref} className="container d-flex justify-content-center">
+                <motion.div className="row" animate={animation}>
                     {
                         BlogData.map(blog => <BlogDetails blog={blog}></BlogDetails>)
                     }
-                </div>
+                </motion.div>
             </div>
         </section>
     );

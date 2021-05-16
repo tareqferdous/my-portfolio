@@ -4,6 +4,7 @@ import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from "framer-motion";
 
 
 const Header = () => {
@@ -11,7 +12,13 @@ const Header = () => {
         <>
 
 <div className="header-wrapper">
-            <div class="main-info text-center">
+            <motion.div class="main-info text-center"
+            // initial={{x: '-100vw'}}
+            // animate={{x: 0}}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 1.5, duration: 1.5}}
+            >
                 <h1 className="pb-2">Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
                 <Typed 
                     className="typed-text"
@@ -41,7 +48,7 @@ const Header = () => {
                             </a>
                         </div>
                        
-            </div>
+            </motion.div>
             
         </div>
 

@@ -1,9 +1,34 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import {} from '@fortawesome/free-brands-svg-icons';
 import {faCode, faLaptop, faMobile} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {useInView} from 'react-intersection-observer';
+import {useEffect} from 'react';
+import {useAnimation} from 'framer-motion';
+
 const Services = () => {
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+  const animation = useAnimation();
+
+  useEffect(()=>{
+    if(inView){
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
+        }
+      });
+    }
+    if(!inView){
+      animation.start({x: '-100vw'})
+    }
+
+    console.log("use effect hook, inView = ", inView);
+  }, [inView]);
+
   const [header] = React.useState({
     mainHeader: "SERVICES",
     subHeading: "My Services",
@@ -40,10 +65,10 @@ const Services = () => {
   return (
     <div className="services">
       <div className="container">
-        <div className="services__header">
+        <div ref={ref} className="services__header">
           <div className="common">
-            <h3 className="heading">{header.mainHeader}</h3>
-            <h1 className="mainHeader">{header.subHeading}</h1>
+            <h3  className="heading">{header.mainHeader}</h3>
+            <h1  className="mainHeader">{header.subHeading}</h1>
             {/* <p className="mainContent">{header.text}</p> */}
             <div className="commonBorder"></div>
           </div>
@@ -51,13 +76,15 @@ const Services = () => {
           <div class="container">
           <div className="row bgMain">
             {state.map((info) => (
-              <div className="col-md-4 bgMain">
+              <motion.div className="col-md-4 bgMain"
+              animate={animation}
+              >
                 <div className="services__box text-center">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           </div>

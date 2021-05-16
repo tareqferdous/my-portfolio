@@ -28,12 +28,12 @@ function App() {
     setLoading(true);
     setTimeout(()=>{
       setLoading(false);
-    }, 5000)
+    }, 3000)
   },[])
 
   const override = css`
   display: flex;
-  margin: 250px auto;
+  margin: 300px auto;
   border-color: red;
   padding: 50px;
 `;

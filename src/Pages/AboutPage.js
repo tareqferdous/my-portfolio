@@ -4,15 +4,43 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import me from '../img/me.jpg';
+import {useInView} from 'react-intersection-observer';
+import {useEffect} from 'react';
+import {useAnimation} from 'framer-motion';
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
+
+    const {ref, inView} = useInView({
+        threshold: 0.2
+      });
+      const animation = useAnimation();
+    
+      useEffect(()=>{
+        if(inView){
+          animation.start({
+            opacity: 1,
+            
+            // x: 0,
+            transition: {
+              type: 'spring', duration: 1, delay: 0.7, bounce: 0.3
+            }
+          });
+        }
+        if(!inView){
+          animation.start({opacity: 0})
+        }
+    
+        console.log("use effect hook, inView = ", inView);
+      }, [inView]);
+
     return (
         <section className="skills pt-5 pb-5 about-wrapper" id="skills" style={{backgroundColor: '#121f35'}}>
         <div className="container about-info">
             <div className="row">
-            <div className="max-width">
+            <div ref={ref} className="max-width">
             <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>
-            <div className="skills-content">
+            <motion.div  className="skills-content" animate={animation}>
                 <div className="text-white column left">
                     <div><img className="w-50 img-fluid" style={{border: '2px solid golden', borderRadius:'10px',}} src={me} alt=""/></div>
                    
@@ -89,7 +117,7 @@ I graduated from University of Asia Pacific where I studied web development in a
                         <div className="line mysql"></div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
             </div>
         </div>
