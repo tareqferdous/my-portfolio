@@ -64,7 +64,7 @@ management have led to company success.</p>
                 </form>
             </div>
         </motion.div>
-        <div className=" text-black" style={{textAlign:'right', paddingRight: '325px'}}>
+        <div className=" text-black" style={{textAlign:'right', paddingRight: '250px'}}>
             <small>Sending to: tarekferdos10@gmail.com</small>
         </div>
         </div>
