@@ -59,14 +59,13 @@ management have led to company success.</p>
                 <form onSubmit={sendEmail} action="">
                     <input type="text" name="name" className="form-control" placeholder="Name" id=""/>
                     <input type="email" name="email" className="form-control my-4" placeholder="Email" id=""/>
-                    <input type="text" name="subject" className="form-control" placeholder="Subject" id=""/>
                     <textarea id="message" name="message" className="form-control mb-4" rows="8" cols="72" placeholder="Your Message"></textarea>
                     <button className="btn btn-primary">Send</button>
                 </form>
             </div>
         </motion.div>
-        <div className="text-center text-black">
-            <small>Sending to: tarekferdos@gmail.com</small>
+        <div className=" text-black" style={{textAlign:'right', paddingRight: '325px'}}>
+            <small>Sending to: tarekferdos10@gmail.com</small>
         </div>
         </div>
     </div>
