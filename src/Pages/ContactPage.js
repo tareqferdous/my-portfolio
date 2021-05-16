@@ -65,8 +65,8 @@ management have led to company success.</p>
                 </form>
             </div>
         </motion.div>
-        <div className="footer text-center text-black">
-            <small style={{}}>copyright Orange labs 2020</small>
+        <div className="text-center text-black">
+            <small>Sending to: tarekferdos@gmail.com</small>
         </div>
         </div>
     </div>

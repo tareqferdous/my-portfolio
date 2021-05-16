@@ -24,7 +24,7 @@ const NavBar = () => {
                     <Link className="nav-link mr-3 text-white" to="/blogs">Blogs</Link>
                 </li> 
                 <li className="nav-item">
-                    <Link className="nav-link mr-3 text-white" to="/contact">Contact Us</Link>
+                    <Link className="nav-link mr-3 text-white" to="/contact">Contact</Link>
                 </li> 
                 </ul>  
         </Navbar.Collapse>
