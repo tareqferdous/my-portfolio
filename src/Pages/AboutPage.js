@@ -46,10 +46,8 @@ const AboutPage = () => {
                    
                     {/* <h3 style={{color:" #1CC7C1", textAlign: 'center'}}>My creative skills & experiences.</h3> */}
                     <p style={{ fontSize: '16px', paddingTop: '15px'}}>Name: Tareq Ferdous</p>
-                    <p style={{ fontSize: '16px'}}>Profile: Front-End Developer</p>
                     <p style={{ fontSize: '16px'}}>Email: tareqferdous10@gmail.com</p>
-                    <p style={{color:"#C0C0C0", fontSize: '16px'}}>For the past 1 year, I've been developing applications for the web using mostly React and NodeJs. What I do as every day there is something new and exciting to learn
-I graduated from University of Asia Pacific where I studied web development in a course named Software Engineering. While I was at university I worked part time for some individual that helped me to grow as a developer.</p>
+                    <p style={{color:"#C0C0C0", fontSize: '16px'}}>Hi, I am Tareq. I have completed my graduation in computer science and engineering from University of Asia Pacific. Along with my degree I have learnt javascript, react, node js and other various technologies. And for the last few months I have been developing web applications mostly using react and node js. I am equally interested in frontend and backend technologies and want to introduce myself as a MERN stack developer.</p>
 <div><button style={{ borderRadius:'5px'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div>
 {/* 
                         <div className="icons">
