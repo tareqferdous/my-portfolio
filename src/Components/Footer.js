@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <footer className="footer-area">
             <div className="container py-3">
-                    <p className="text-center text-white pt-3 ">© 2021 Tareq Ferdous. All Rights Reserved</p>
+                    <p className="text-center text-white pt-3 " style={{fontSize: '16px'}}>© 2021 Tareq Ferdous. All Rights Reserved</p>
                     {/* <FooterCol key={1} menuTitle={"Discover Us"} menuItems={noNamed}/>
                     <FooterCol key={2} menuTitle="Services" menuItems={services}/>
                     <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}> 
