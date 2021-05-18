@@ -54,7 +54,7 @@ const BlogsPage = () => {
             <div className="text-center pb-3">
             <h2 className=" pb-3" style={{color: '#1CC7C1'}}>Recent Blogs</h2>
             </div>
-            <div ref={ref} className="container d-flex justify-content-center">
+            <div ref={ref} className="container">
                 <motion.div className="row" animate={animation}>
                     {
                         BlogData.map(blog => <BlogDetails blog={blog}></BlogDetails>)

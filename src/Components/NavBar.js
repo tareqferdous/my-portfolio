@@ -8,8 +8,8 @@ const NavBar = () => {
     <Navbar className="nav" style={{backgroundColor: '#0a192f'}} expand="lg">
         <div class="container">
         <Navbar.Brand ><h3 className="text-white">Portfolio</h3></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{background: 'DarkSlateBlue'}} />
+        <Navbar.Collapse id="responsive-navbar-nav">
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item active text-white">
                     <Link className="nav-link mr-3 text-white" to="/">Home <span className="sr-only">(current)</span></Link>

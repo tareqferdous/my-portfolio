@@ -44,31 +44,42 @@ const ContactPage = () => {
       }
 
     return (
-        <div className="contact">
-        <div ref={ref} className="container contact-content">
-            <h2 className="pb-4" style={{color:'lightSalmon', textAlign: 'center'}}>Contact Me</h2>
-        <motion.div  animate={animation} className="row mb-3">
-            <div className="col-md-4 offset-md-1 mt-5">
-                <h3>Let us handle your work, professionally.</h3>
-                <p>I strive to maintain accuracy and consistency in task completion, individual performance and
-team goal achievement.My ability to
-produce excellent code and to clearly communicate and collaborate with coworker’s, client and
-management have led to company success.</p>
+      <section className="contact py-5">
+      <div className="container">
+          <div className="section-header text-center text-white mb-5">
+               <h2>Contact me</h2>
+          </div>
+         <div class="row">
+         <div className="col-md-5 mt-5 ">
+                <h3>Get in touch with</h3>
+                <div className="pt-3 pb-3">
+                  <h6 className="text-white">Phone</h6>
+                  <button className="btn btn-primary">+8801303109612</button>
+                </div>
+                <div className="pt-3 pb-3">
+                  <h6 className="text-white">Email</h6>
+                  <button className="btn btn-primary">tareqferdous10@gmail.com</button>
+                </div>
             </div>
-            <div className="col-md-6 offset-md-1">
-                <form onSubmit={sendEmail} action="">
-                    <input type="text" name="name" className="form-control" placeholder="Name" id=""/>
-                    <input type="email" name="email" className="form-control my-4" placeholder="Email" id=""/>
-                    <textarea id="message" name="message" className="form-control mb-4" rows="8" cols="72" placeholder="Your Message"></textarea>
-                    <button className="btn btn-primary">Send</button>
-                </form>
-            </div>
-        </motion.div>
-        <div className=" text-black" style={{textAlign:'right', paddingRight: '270px'}}>
-            <small>Sending to: tarekferdos10@gmail.com</small>
-        </div>
-        </div>
-    </div>
+          <div className="col-md-7">
+              <form action="">
+                  <div className="form-group">
+                      <input type="text" className="form-control" placeholder="Email Address *"/>
+                  </div>
+                  <div className="form-group">
+                      <input type="text" className="form-control" placeholder="Subject *"/>
+                  </div>
+                  <div className="form-group">
+                      <textarea name="" className="form-control" id="" cols="30" rows="7" placeholder="Message *"></textarea>
+                  </div>
+                  <div className="form-group ">
+                      <button type="button" className="btn btn-primary"> Send </button>
+                  </div>
+              </form>
+          </div>
+         </div>
+      </div>
+  </section>
     );
 };
 
