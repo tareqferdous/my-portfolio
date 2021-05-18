@@ -8,7 +8,7 @@ import {useAnimation} from 'framer-motion';
 const portfolioData = [
     {
         title: 'Event Studio',
-        description: "A Full-Stack event managing website where anyone can hire a photographer for any events.",
+        description: "A Full-Stack event managing website where anyone can hire a photographer",
         pic: 'https://i.ibb.co/NprtNgK/12.png',
         live: 'https://event-studio-1b7c5.web.app/',
         github: 'https://github.com/tareqferdous/event-studio'
