@@ -7,22 +7,22 @@ import {useAnimation} from 'framer-motion';
 
 const BlogData = [
     {
-        title: 'JavaScript',
-        description: "How it feels to learn JavaScript in 2021",
+        title: 'JavaScript tricky concepts',
+        description: "Any number except 0 is true. If the value of any variable is 0 will return false..",
         pic: 'https://4.bp.blogspot.com/-s2EhTt57oeU/XHtQtO1QNLI/AAAAAAAANW8/KYkPQEZUyocSpA2RzqCcVt31imXPi63RACLcBGAs/s1600/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg',
-        live: 'https://medium.com/hackernoon/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f',
+        live: 'https://tarekferdos.medium.com/javascript-tricky-concepts-5cd473251497',
     },
     {
-        title: 'React',
-        description: "The most important lessons working with React",
+        title: 'React Application Optimization',
+        description: "Code splitting is a technique whose goal is to load the code in part by part..",
         pic: 'https://dejanvasic.files.wordpress.com/2020/06/react-img.jpg',
-        live: 'https://medium.com/free-code-camp/mindset-lessons-from-a-year-with-react-1de862421981',
+        live: 'https://tarekferdos.medium.com/10-things-about-react-e6f55c0a5cd0',
     },
     {
-        title: 'Node JS',
-        description: "The definitive Node.js handbook",
-        pic: 'https://miro.medium.com/max/1838/1*xdo0UBpyszvD7-7EH4TkIA.png',
-        live: 'https://medium.com/free-code-camp/the-definitive-node-js-handbook-6912378afc6e',
+        title: 'Modern JavaScript — ES6',
+        description: "ES6 refers to version 6 of the ECMA Script programming language..",
+        pic: 'https://www.mkwd.net/wp-content/uploads/2019/11/ES6.jpg',
+        live: 'https://tarekferdos.medium.com/modern-javascript-es6-77837ca2bb30',
     }
 ]
 
@@ -36,14 +36,14 @@ const BlogsPage = () => {
       useEffect(()=>{
         if(inView){
           animation.start({
-            x: 0,
+            y: 10,
             transition: {
               type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
             }
           });
         }
         if(!inView){
-          animation.start({x: '-100vw'})
+          animation.start({y: 50})
         }
     
         console.log("use effect hook, inView = ", inView);

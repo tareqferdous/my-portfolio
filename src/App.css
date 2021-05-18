@@ -315,11 +315,12 @@
 }
 
 .effect:hover{
-    background: #27185a;
+    /* background: #27185a;
    
     box-shadow: 0 8px 20px #27185a;
     color: #fff;
-    transform: translateY(-20px);
+    transform: translateY(-20px); */
+    transform: scale(1.1);
     transition: .4s ease-in-out;
 }
 

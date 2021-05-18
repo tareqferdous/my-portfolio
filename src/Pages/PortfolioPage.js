@@ -40,14 +40,14 @@ const PortfolioPage = () => {
       useEffect(()=>{
         if(inView){
           animation.start({
-            x: 0,
+            y: 10,
             transition: {
               type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
             }
           });
         }
         if(!inView){
-          animation.start({x: '-100vw'})
+          animation.start({y: 50})
         }
     
         console.log("use effect hook, inView = ", inView);
