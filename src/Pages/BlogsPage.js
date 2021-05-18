@@ -13,7 +13,7 @@ const BlogData = [
         live: 'https://tarekferdos.medium.com/javascript-tricky-concepts-5cd473251497',
     },
     {
-        title: 'React Application Optimization',
+        title: 'Think in a react way',
         description: "Code splitting is a technique whose goal is to load the code in part by part..",
         pic: 'https://dejanvasic.files.wordpress.com/2020/06/react-img.jpg',
         live: 'https://tarekferdos.medium.com/10-things-about-react-e6f55c0a5cd0',
