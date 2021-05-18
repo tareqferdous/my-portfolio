@@ -3,7 +3,7 @@ import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import me from '../img/me.jpg';
+import me from '../img/profile (1).png';
 import {useInView} from 'react-intersection-observer';
 import {useEffect} from 'react';
 import {useAnimation} from 'framer-motion';
@@ -42,7 +42,7 @@ const AboutPage = () => {
             <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>
             <motion.div  className="skills-content" animate={animation}>
                 <div className="text-white column left">
-                    <div><img className="w-50 img-fluid" style={{border: '2px solid golden', borderRadius:'10px',}} src={me} alt=""/></div>
+                    <div><img className="img-fluid" style={{border: '2px solid #121f35', borderRadius:'10px', height: '180px', width:'180px'}} src={me} alt=""/></div>
                    
                     {/* <h3 style={{color:" #1CC7C1", textAlign: 'center'}}>My creative skills & experiences.</h3> */}
                     <p style={{ fontSize: '16px', paddingTop: '15px'}}>Name: Tareq Ferdous</p>

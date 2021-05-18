@@ -34,7 +34,7 @@ function App() {
   const override = css`
   display: flex;
   margin: 300px auto;
-  border-color: red;
+  border: 5px solid DarkSlateGrey;
   padding: 50px;
 `;
 
@@ -80,10 +80,11 @@ function App() {
           <Route exact path="/">
             
             <Header></Header>
-            <Services></Services>
+            
             
             
             <AboutPage></AboutPage>
+            <Services></Services>
             <PortfolioPage></PortfolioPage>
             <BlogsPage></BlogsPage>
             <ContactPage></ContactPage>
