@@ -368,6 +368,7 @@
 .footer-area{
     background:rgb(16, 16, 63);
     background-size: cover;
+    font-size: 16px;
 }
 
 .footer-area li{
@@ -526,3 +527,7 @@
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent, #00c6ff);
 }
+
+
+/* Spinner */
+

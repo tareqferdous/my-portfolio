@@ -22,36 +22,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/core";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(()=>{
-    setLoading(true);
-    setTimeout(()=>{
-      setLoading(false);
-    }, 3000)
-  },[])
-
-  const override = css`
-  display: flex;
-  margin: 300px auto;
-  border: 5px solid DarkSlateGrey;
-  padding: 50px;
-`;
 
   return (
     <div className="App">
-
-      {
-        loading ?
-
-        <ClipLoader 
-        css={override}
-          size = {30}
-          color = {"#36D7B7"}
-          loading = {loading}
-        />
-
-        :
 
         <div class="content">
            <Particles
@@ -109,7 +82,7 @@ function App() {
           </Switch>
         </div>
         
-      } 
+   
 
       <div>     
         

@@ -43,7 +43,7 @@ const BlogsPage = () => {
           });
         }
         if(!inView){
-          animation.start({y: 100})
+          animation.start({y: 50})
         }
     
         console.log("use effect hook, inView = ", inView);
