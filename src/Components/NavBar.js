@@ -15,16 +15,16 @@ const NavBar = () => {
                     <Link className="nav-link mr-3 text-white" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link mr-3 text-white"  to="/about">About</Link>
+                    <a className="nav-link mr-3 text-white"  href="#about">About</a>
                 </li>   
                 <li className="nav-item">
-                    <Link className="nav-link mr-3 text-white" to="/portfolio">Portfolio</Link>
+                    <a className="nav-link mr-3 text-white" href="#portfolio">Portfolio</a>
                 </li> 
                 <li className="nav-item">
-                    <Link className="nav-link mr-3 text-white" to="/blogs">Blogs</Link>
+                    <a className="nav-link mr-3 text-white" href="#blogs">Blogs</a>
                 </li> 
                 <li className="nav-item">
-                    <Link className="nav-link mr-3 text-white" to="/contact">Contact</Link>
+                    <a className="nav-link mr-3 text-white" href="#contact">Contact</a>
                 </li> 
                 </ul>  
         </Navbar.Collapse>

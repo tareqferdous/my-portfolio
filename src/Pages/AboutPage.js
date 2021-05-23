@@ -36,10 +36,10 @@ const AboutPage = () => {
 
     return (
         <section className="skills pt-5 pb-5 about-wrapper" id="skills" style={{backgroundColor: '#121f35'}}>
-        <div className="container about-info">
+        <div className="container about-info" id="about">
             <div className="row">
             <div ref={ref} className="max-width">
-            <h2 className="text-center pb-5" style={{color: '#fff'}}>About Me</h2>
+            <h2 className="text-center pb-5 page-title" style={{color: '#fff'}}>About Me</h2>
             <motion.div  className="skills-content" animate={animation}>
                 <div className="text-white column left">
                     <div><img className="img-fluid" style={{border: '2px solid #121f35', borderRadius:'10px', height: '180px', width:'180px'}} src={me} alt=""/></div>

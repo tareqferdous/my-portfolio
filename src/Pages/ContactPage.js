@@ -44,42 +44,65 @@ const ContactPage = () => {
       }
 
     return (
-      <section className="contact py-5">
-      <div className="container">
-          <div className="section-header text-center text-white mb-5">
-               <h2>Contact me</h2>
-          </div>
-         <div class="row">
-         <div className="col-md-5 mt-5 ">
-                <h3>Get in touch with</h3>
-                <div className="pt-3 pb-3">
-                  <h6 className="text-white">Phone</h6>
-                  <button className="btn btn-primary">+8801303109612</button>
-                </div>
-                <div className="pt-3 pb-3">
-                  <h6 className="text-white">Email</h6>
-                  <button className="btn btn-primary">tareqferdous10@gmail.com</button>
-                </div>
+      <section id="contact" className="contact py-5" style={{backgroundColor: '#121f35'}}>
+        <div className="max-width container">
+            <h2 className="page-title text-center text-white pb-5">Contact me</h2>
+            <div className="contact-content row" ref={ref}>
+                <motion.div className="column left col-md-6" animate={animation}>
+                    <h4 className="text-white" >Get in Touch</h4>
+                    <p className="text-muted" style={{width:'90%'}}>Email me with any questions or inquires. I would be happy to answer your questions and set up a meeting with you. </p>
+                    
+                    <div class="icon pl-3">
+                    <div className="row">
+                            <i className="fas fa-user"></i>
+                            <div className="info">
+                                <div className="head text-muted">Name</div>
+                                <div className="sub-title text-white">Tareq Ferdous</div>
+                            </div>
+                      </div>
+
+                      <div className="row">
+                            <i className="fas fa-map-marker-alt"></i>
+                            <div className="info">
+                                <div className="head text-muted">Address</div>
+                                <div className="sub-title text-white">Dhaka, Bangladesh</div>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <i className="fas fa-envelope"></i>
+                            <div className="info">
+                                <div className="head text-muted">Email</div>
+                                <div className="sub-title text-white">tareqferdous10@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="column right col-md-6" animate={animation}>
+                    <h4 className="text-white pb-2">Message me</h4>
+                    <form className="contact-form" action="#" method="POST">
+                        <div className="fields">
+                            <div className="field name">
+                                <input type="text" className="fullname" placeholder="Name"/>
+                            </div>
+                            <div className="field email">
+                                <input type="text" className="email-input" placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div className="field">
+                            <input type="text" className="subject" placeholder="Subject"/>
+                        </div>
+                        <div className="field textarea">
+                            <textarea className="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                        </div>
+                        <div className="button-area">
+                            <button className="send-msg" type="submit" name="send">Send</button>
+                        </div>
+                    </form>
+                </motion.div>
             </div>
-          <div className="col-md-7">
-              <form action="">
-                  <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Email Address *"/>
-                  </div>
-                  <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Subject *"/>
-                  </div>
-                  <div className="form-group">
-                      <textarea name="" className="form-control" id="" cols="30" rows="7" placeholder="Message *"></textarea>
-                  </div>
-                  <div className="form-group ">
-                      <button type="button" className="btn btn-primary"> Send </button>
-                  </div>
-              </form>
-          </div>
-         </div>
-      </div>
-  </section>
+        </div>
+    </section>
     );
 };
 

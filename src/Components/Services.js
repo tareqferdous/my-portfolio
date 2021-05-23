@@ -42,36 +42,33 @@ const Services = () => {
       icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faCode} className="icon fb" />,
       heading: "Web Development",
       text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-      industry. simply dummy",
+        "I will provide web development service. if you need please contact with me",
     },
     {
       id: 2,
       icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faMobile} className="icon fb" />,
-      heading: "Web Application",
+      heading: "Web Design",
       text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+        "I can do any kind of website design like Ecommerce, landing page, portfolio etc ",
     },
     {
       id: 3,
       icon: <FontAwesomeIcon style={{fontSize: '40px'}} icon={faLaptop} className="icon fb" />,
-      heading: "Web Design",
+      heading: "Fully Responsive",
       text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+        "I will provide fully responsive website with mobile phone, tablet, desktop etc",
     }
   ]);
   return (
     <div className="services">
       <div className="container">
         <div ref={ref} className="services__header">
-          <div className="common">
+          <motion.div className="common" animate={animation}>
             <h3  className="heading">{header.mainHeader}</h3>
             <h1  className="mainHeader">{header.subHeading}</h1>
             {/* <p className="mainContent">{header.text}</p> */}
             <div className="commonBorder"></div>
-          </div>
+          </motion.div>
 
           <div class="container">
           <div className="row bgMain">

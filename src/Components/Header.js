@@ -36,17 +36,23 @@ const Header = () => {
 
             {/* <div className="text-center pt-2"><button style={{ borderRadius:'5px',cursor: 'pointer'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div> */}
 
-            <div className="icons">
-                            <a  className="icon-holder">
-                                <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
-                            </a>
-                            <a  className="icon-holder">
-                                <a href="https://github.com/tareqferdous" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="icon gh" /></a>                           
-                            </a>
-                            <a className="icon-holder">
-                                <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faLinkedin} className="icon yt"/></a>
-                            </a>
-                        </div>
+                <div className="icons pb-5">
+                                <a  className="icon-holder">
+                                    <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
+                                </a>
+                                <a  className="icon-holder">
+                                    <a href="https://github.com/tareqferdous" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="icon gh" /></a>                           
+                                </a>
+                                <a className="icon-holder">
+                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faLinkedin} className="icon yt"/></a>
+                                </a>
+                </div>
+
+                <div class="arrow">
+                    <small></small>
+                    <small></small>
+                    <small></small>
+                </div>
                        
             </motion.div>
             
