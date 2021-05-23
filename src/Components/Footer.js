@@ -25,9 +25,9 @@ const Footer = () => {
     ]
     return (
         <footer className="footer-area">
-            <div className="container py-3">
-                    <p className="text-center text-white pt-3 " style={{fontSize: '16px'}}>© 2021 Tareq Ferdous. All Rights Reserved</p>
-                    {/* <FooterCol key={1} menuTitle={"Discover Us"} menuItems={noNamed}/>
+            <div className="container">
+                <div class="row py-3">
+                <FooterCol key={1} menuTitle={"Discover Us"} menuItems={noNamed}/>
                     <FooterCol key={2} menuTitle="Services" menuItems={services}/>
                     <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}> 
                         <ul className="social-media">
@@ -39,7 +39,8 @@ const Footer = () => {
                             <h6 className="text-white">Call now</h6>
                             <button className="btn btn-primary">+8801303109612</button>
                         </div>
-                    </FooterCol> */}
+                    </FooterCol> 
+                </div>
             </div>
         </footer>
         
