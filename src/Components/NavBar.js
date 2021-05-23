@@ -1,10 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../src/styles/Navbar.css'
 
 const NavBar = () => {
@@ -13,7 +9,7 @@ const NavBar = () => {
         <div class="container">
         <Navbar.Brand ><h3 className="text-white">Portfolio</h3></Navbar.Brand>
 
-        <small><Navbar.Toggle aria-controls="responsive-navbar-nav" style={{background: 'DarkGrey', border: '2px solid DarkGrey', fontSize: '14px'}} /><FontAwesomeIcon icon={faBars} /></small>
+        <small><Navbar.Toggle aria-controls="responsive-navbar-nav" style={{background: 'DarkGrey', border: '2px solid DarkGrey', fontSize: '14px'}} /></small>
         <Navbar.Collapse id="responsive-navbar-nav">
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item active text-white">
