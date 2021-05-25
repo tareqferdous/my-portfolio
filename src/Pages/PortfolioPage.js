@@ -111,7 +111,7 @@ const PortfolioPage = () => {
       <small class="card-text text-white">Sport Mob is a website build with react where we can visualize some football team under a specific league. To select a specific team, we can see more about the team and Social medias</small>
       <div class="d-flex justify-content-between">
         <div class="technology pt-2">
-          <small>JavaScript</small>
+          <small >JavaScript</small>
           <small>React.js</small>
           <small>Rest Api</small>
           <small>ES6</small>

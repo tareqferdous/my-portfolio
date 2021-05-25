@@ -75,7 +75,7 @@
 
   .header-wrapper{
       position: relative;
-      background: url(./img/remy_loz-3S0INpfREQc-unsplash.jpg) no-repeat;
+      background: url(./img/Remote-Work-Tools.jpg) no-repeat;
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -363,6 +363,10 @@
     transition: .4s ease-in-out;
 }
 
+#portfolio small{
+    font-size: 14px;
+}
+
 /* footer */
 
 .footer-area{
@@ -399,9 +403,11 @@
 /* Update Contact  */
 .contact{
     background:#121f35;
+
 }
  .contact .contact-content .left p{
     text-align: justify;
+    font-size: 16px;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -420,6 +426,7 @@
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    font-size: 16px;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
