@@ -63,7 +63,7 @@ const PortfolioPage = () => {
     <img src="https://i.ibb.co/NprtNgK/12.png" class="card-img-top" alt="..."/>
     <div class="card-body">
       <h5 class="card-title text-white">Event Studio</h5>
-      <small class="card-text text-white">A Full-Stack event managing website where anyone can hire a photographer for any events. Client can review or rate our services. Client can pay online using credit card and enjoy awesome service</small>
+      <small class="card-text text-white">A Full-Stack event managing website where anyone can hire a photographer for any events. Client can review or rate our services. Client can pay online using credit card and enjoy service</small>
       <div class="d-flex justify-content-between">
         <div class="technology pt-2">
           <small>React.js</small>

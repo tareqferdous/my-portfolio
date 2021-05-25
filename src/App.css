@@ -430,6 +430,7 @@
 }
 .contact .contact-content .info .sub-title{
     color: #333;
+    font-size: 16px;
 } 
  .contact .right form .fields{
     display: flex;
