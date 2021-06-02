@@ -17,13 +17,14 @@ const Services = () => {
     if(inView){
       animation.start({
         x: 0,
+        opacity:1,
         transition: {
-          type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
+          type: 'spring', duration: 1, delay: 0.2
         }
       });
     }
     if(!inView){
-      animation.start({x: '-100vw'})
+      animation.start({x: -100,opacity: 0})
     }
 
     console.log("use effect hook, inView = ", inView);
@@ -63,12 +64,12 @@ const Services = () => {
     <div className="services">
       <div className="container">
         <div ref={ref} className="services__header">
-          <motion.div className="common" animate={animation}>
-            <h3  className="heading">{header.mainHeader}</h3>
+          <div className="common" animate={animation}>
+            {/* <h3  className="heading">{header.mainHeader}</h3> */}
             <h1  className="mainHeader">{header.subHeading}</h1>
             {/* <p className="mainContent">{header.text}</p> */}
             <div className="commonBorder"></div>
-          </motion.div>
+          </div>
 
           <div class="container">
           <div className="row bgMain">

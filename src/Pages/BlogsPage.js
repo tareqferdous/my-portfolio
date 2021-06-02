@@ -36,25 +36,26 @@ const BlogsPage = () => {
       useEffect(()=>{
         if(inView){
           animation.start({
-            y: 10,
+            x: 0,
+            opacity:1,
             transition: {
-              type: 'spring', duration: 1.5, delay: 0.2, bounce: 0.3
+              type: 'spring', duration: 1.5, delay: 0.2
             }
           });
         }
         if(!inView){
-          animation.start({y: 50})
+          animation.start({x: -100, opacity: 0})
         }
     
         console.log("use effect hook, inView = ", inView);
       }, [inView]);
 
     return (
-      <section id="blogs" className="py-5" style={{backgroundColor: '#0a192f'}}>
-      <h2 className="text-center text-white pb-5 page-title">My Recent Blogs</h2>
+      <section  ref={ref} id="blogs" className="py-5" style={{backgroundColor: '#0a192f'}}>
+      <h2 className="text-center text-white pb-5 page-title" >My Recent Blogs</h2>
       <div class="container">
       <div class="row">
-      <div class="card-deck" ref={ref}>
+      <div class="card-deck">
 <motion.div class="card effect" style={{backgroundColor: 'rgb(23, 42, 69)'}} animate={animation}>
   <img src="https://4.bp.blogspot.com/-s2EhTt57oeU/XHtQtO1QNLI/AAAAAAAANW8/KYkPQEZUyocSpA2RzqCcVt31imXPi63RACLcBGAs/s1600/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg" class="card-img-top" alt="..."/>
   <div class="card-body">

@@ -5,32 +5,24 @@ import '../../src/styles/Navbar.css'
 
 const NavBar = () => {
   return (
-    <Navbar className="nav" style={{backgroundColor: '#0a192f'}} expand="lg">
-        <div class="container">
-        <Navbar.Brand ><h3 className="text-white">Portfolio</h3></Navbar.Brand>
-
-        <small><Navbar.Toggle aria-controls="responsive-navbar-nav" style={{background: 'DarkGrey', border: '2px solid DarkGrey', fontSize: '14px'}} /></small>
-        <Navbar.Collapse id="responsive-navbar-nav">
-            <ul className="navbar-nav ml-auto">
-                <li className="nav-item active text-white">
-                    <Link className="nav-link mr-3 text-white" to="/">Home <span className="sr-only">(current)</span></Link>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link mr-3 text-white"  href="#about">About</a>
-                </li>   
-                <li className="nav-item">
-                    <a className="nav-link mr-3 text-white" href="#portfolio">Portfolio</a>
-                </li> 
-                <li className="nav-item">
-                    <a className="nav-link mr-3 text-white" href="#blogs">Blogs</a>
-                </li> 
-                <li className="nav-item">
-                    <a className="nav-link mr-3 text-white" href="#contact">Contact</a>
-                </li> 
-                </ul>  
-        </Navbar.Collapse>
-        </div>
-    </Navbar>
+    <>
+        <nav style={{backgroundColor: '#0a192E'}}>
+            <input id="nav-toggle" type="checkbox"/>
+            <div class="logo">Portfolio.<strong>TF</strong></div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#blogs">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav >
+    </>
   );
 };
 

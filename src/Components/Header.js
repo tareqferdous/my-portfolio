@@ -3,11 +3,15 @@ import Typed from 'react-typed';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from "framer-motion";
+import "../styles/contact.css";
+
 
 
 const Header = () => {
+
     return (
         <>
 
@@ -15,15 +19,15 @@ const Header = () => {
             <motion.div class="main-info text-center"
             // initial={{x: '-100vw'}}
             // animate={{x: 0}}
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{delay: 1.5, duration: 1.5}}
+            initial={{opacity: 0, x: 100, y:50}}
+            animate={{opacity: 1, x:0, y: 0}}
+            transition={{ duration: 1}}
             >
-                <h1 className="pb-2">Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
+                <h1 className="pb-2 main-text" style={{fontSize: '45px'}}>Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
                 <Typed 
                     className="typed-text"
                     strings={["Front-End Web Developer", "MERN Stack Developer", "Engineer"]}
-                    typeSpeed={40}
+                    typeSpeed={50}
                     backSpeed={60}
                     loop
                 />
@@ -37,25 +41,33 @@ const Header = () => {
             {/* <div className="text-center pt-2"><button style={{ borderRadius:'5px',cursor: 'pointer'}} className="btn-primary"><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV</a></button></div> */}
 
                 <div className="icons pb-5">
-                                <a  className="icon-holder">
-                                    <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
+                                <a className="icon-holder">
+                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faLinkedin} className="icon yt"/></a>
                                 </a>
                                 <a  className="icon-holder">
                                     <a href="https://github.com/tareqferdous" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="icon gh" /></a>                           
                                 </a>
-                                <a className="icon-holder">
-                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faLinkedin} className="icon yt"/></a>
+                                <a  className="icon-holder">
+                                    <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
                                 </a>
+                                <a className="icon-holder">
+                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faTwitter} className="icon yt"/></a>
+                                </a>
+                                
+
+                               
+                               
                 </div>
 
                 <div class="arrow">
                     <small></small>
                     <small></small>
-                    <small></small>
+                  
                 </div>
+
                        
             </motion.div>
-            
+            <a class="gotobtn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
         </div>
 
         </>
