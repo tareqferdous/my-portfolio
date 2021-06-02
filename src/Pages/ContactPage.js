@@ -46,17 +46,17 @@ const ContactPage = () => {
     return (
       <section id="contact" className="contact py-5" style={{background: 'LightGrey'}}>
         <div className="max-width container">
-            <h2 className="page-title text-center pb-5">Contact me</h2>
+            <h2 className="page-title text-center pb-5" style={{color: 'black', fontWeight: 600}}>Contact me</h2>
             <div className="contact-content row" ref={ref}>
                 <motion.div className="column left col-md-6" animate={animation}>
-                    <h4 className=""style={{color: '#143B80'}} >Get in Touch</h4>
-                    <p className="" style={{width:'90%', fontSize: '16px', color: '#1a0000'}}>Email me with any questions or inquires. I would be happy to answer your questions and set up a meeting with you. </p>
+                    <h4 className=""style={{color: '#143B80', fontWeight: 600}} >Get in Touch</h4>
+                    <p className="" style={{width:'90%', fontSize: '16px', color: '#1a0000', fontWeight: 500}}>Email me with any questions or inquires. I would be happy to answer your questions and set up a meeting with you. </p>
                     
                     <div class="icon pl-3">
                     <div className="row">
                             <i className="fas fa-user"></i>
                             <div className="info">
-                                <div className="head " style={{color:'#1a0000'}}>Name</div>
+                                <div className="head " style={{color:'#1a0000', fontWeight: 500}}>Name</div>
                                 <div className="sub-title">Tareq Ferdous</div>
                             </div>
                       </div>
@@ -64,7 +64,7 @@ const ContactPage = () => {
                       <div className="row">
                             <i className="fas fa-map-marker-alt"></i>
                             <div className="info">
-                                <div className="head " style={{color:'#1a0000'}}>Address</div>
+                                <div className="head " style={{color:'#1a0000', fontWeight: 500}}>Address</div>
                                 <div className="sub-title">Dhaka, Bangladesh</div>
                             </div>
                         </div>
@@ -72,14 +72,14 @@ const ContactPage = () => {
                         <div className="row">
                             <i className="fas fa-envelope"></i>
                             <div className="info">
-                                <div className="head " style={{color:'#1a0000'}}>Email</div>
+                                <div className="head " style={{color:'#1a0000', fontWeight: 500}}>Email</div>
                                 <div className="sub-title">tareqferdous10@gmail.com</div>
                             </div>
                         </div>
                     </div>
                 </motion.div>
                 <motion.div className="column right col-md-6" animate={animation}>
-                    <h4 className=" pb-2" style={{color: '#143B80'}}>Message me</h4>
+                    <h4 className=" pb-2" style={{color: '#143B80', fontWeight: 600}}>Message me</h4>
                     <form onSubmit={sendEmail} className="contact-form">
                         <div className="fields">
                             <div className="field name">

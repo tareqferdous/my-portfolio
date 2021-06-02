@@ -53,10 +53,7 @@ const Header = () => {
                                 <a className="icon-holder">
                                     <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faTwitter} className="icon yt"/></a>
                                 </a>
-                                
-
-                               
-                               
+                                                              
                 </div>
 
                 <div class="arrow">

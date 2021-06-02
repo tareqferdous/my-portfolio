@@ -19,17 +19,16 @@ const AboutPage = () => {
       useEffect(()=>{
         if(inView){
           animation.start({
-        
-            
+              
             opacity:1,
-            x:0,
+            y:0,
             transition: {
              type: 'spring', duration: 1.5, delay:0.3, bounce: 0.3
             }
           });
         }
         if(!inView){
-          animation.start({  x: 100, opacity: 0})
+          animation.start({  y: 50, opacity: 0})
         }
     
         console.log("use effect hook, inView = ", inView);
