@@ -31,10 +31,10 @@ function App() {
               params={{
                 particles: {
                   number: {
-                    value: 25,
+                    value: 30,
                     density:{
                       enable: true,
-                      value_area: 1100
+                      value_area: 900,
                     }
                   },
                   shape:{

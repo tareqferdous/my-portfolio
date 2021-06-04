@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import {faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from "framer-motion";
 import "../styles/contact.css";
@@ -23,7 +23,7 @@ const Header = () => {
             animate={{opacity: 1, x:0, y: 0}}
             transition={{ duration: 1}}
             >
-                <h1 className="pb-2 main-text" style={{fontSize: '45px'}}>Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
+                <h1 className="pb-2 main-text" >Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
                 <Typed 
                     className="typed-text"
                     strings={["Front-End Web Developer", "MERN Stack Developer", "Engineer"]}
@@ -31,6 +31,8 @@ const Header = () => {
                     backSpeed={60}
                     loop
                 />
+
+                {/* <p className="text-white pt-3 header-text">A passionate and diligent web developer with a productive idea of problem-solving knows some languages and frameworks for frontend and backend.</p> */}
                 
                 {/* <p className="" style={{color: "white", fontSize:"18px", width: '65%', textAlign:"center", paddingTop: '20px'}}>I count myself as a hardworking person. To pursue a challenging career in a
                 competitive world where enthusiasm, honesty, hard work and passion will support me to
@@ -51,7 +53,7 @@ const Header = () => {
                                     <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
                                 </a>
                                 <a className="icon-holder">
-                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faTwitter} className="icon yt"/></a>
+                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faFacebook} className="icon yt"/></a>
                                 </a>
                                                               
                 </div>

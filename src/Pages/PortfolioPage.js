@@ -62,7 +62,7 @@ const PortfolioPage = () => {
         <div class="row row-cols-1 row-cols-md-3">
   <div class="col mb-4" >
     <motion.div class="card h-100" style={{backgroundColor: 'rgb(23, 42, 69)'}} animate={animation}>
-      <img src="https://i.ibb.co/NprtNgK/12.png" class="card-img-top" alt="..."/>
+      <div class="inner"><img src="https://i.ibb.co/NprtNgK/12.png" class="card-img-top" alt="..."/></div>
       <div class="card-body">
       <h5 class="card-title text-white">Event Studio</h5>
       <small class="card-text text-white">A Full-Stack event managing website where anyone can hire a photographer for any events.</small>
@@ -87,7 +87,7 @@ const PortfolioPage = () => {
     </div>
   <div class="col mb-4">
     <motion.div class="card h-100" style={{backgroundColor: 'rgb(23, 42, 69)'}} animate={animation}>
-      <img src="https://i.ibb.co/9T30xWn/11.png" class="card-img-top" alt="..."/>
+      <div class="inner"><img src="https://i.ibb.co/9T30xWn/11.png" class="card-img-top" alt="..."/></div>
       <div class="card-body">
       <h5 class="card-title text-white">Event Studio</h5>
       <small class="card-text text-white">A Full-Stack event managing website where anyone can hire a photographer for any events.</small>
@@ -113,7 +113,7 @@ const PortfolioPage = () => {
  
   <div class="col mb-4">
     <motion.div class="card h-100" style={{backgroundColor: 'rgb(23, 42, 69)'}} animate={animation}>
-      <img src="https://i.ibb.co/L9r0hWG/14.png" class="card-img-top" alt="..."/>
+      <div class="inner"><img src="https://i.ibb.co/L9r0hWG/14.png" class="card-img-top" alt="..."/></div>
       <div class="card-body">
       <h5 class="card-title text-white">Sport Mob</h5>
       <small class="card-text text-white">Sport Mob build with react that visualize some football team under a specific league.</small>

@@ -28,7 +28,7 @@
     .icon-holder{
         margin-right: 1rem;
         .icon{
-           font-size: 2.4rem;
+           font-size: 2rem;
            color: #5ee6f0;
            transition: all .4s ease-in-out;
         }
@@ -41,5 +41,11 @@
         .yt:hover{
             color: red;
         }
+    }
+}
+
+@media (max-width: 500px){
+    .icons .icon-holder .icon{
+        font-size: 22px;
     }
 }
