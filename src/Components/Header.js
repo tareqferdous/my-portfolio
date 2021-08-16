@@ -23,7 +23,7 @@ const Header = () => {
             animate={{opacity: 1, x:0, y: 0}}
             transition={{ duration: 1}}
             >
-                <h1 className="pb-2 main-text" >Hello, I'M <span style={{color: 'orange'}}>TAREQ FERDOUS</span></h1>
+                <h1 className="pb-2 main-text" >Hello, I'M <span style={{color: 'Crimson'}}>TAREQ FERDOUS</span></h1>
                 <Typed 
                     className="typed-text"
                     strings={["Front-End Web Developer", "MERN Stack Developer", "Engineer"]}
@@ -52,8 +52,8 @@ const Header = () => {
                                 <a  className="icon-holder">
                                     <a href="https://www.instagram.com/tareqferdous/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon fb" /></a>             
                                 </a>
-                                <a className="icon-holder">
-                                    <a href="https://www.linkedin.com/in/tareq-ferdous-298178211/" target='_blank'><FontAwesomeIcon icon={faFacebook} className="icon yt"/></a>
+                                <a  className="icon-holder">
+                                    <a href="https://www.facebook.com/tareq.ferdos.7/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} className="icon fb" /></a>             
                                 </a>
                                                               
                 </div>

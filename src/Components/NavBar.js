@@ -8,12 +8,12 @@ const NavBar = () => {
     <>
         <nav style={{backgroundColor: '#0a192E'}}>
             <input id="nav-toggle" type="checkbox"/>
-            <div class="logo">Portfolio.<strong>TF</strong></div>
+            <div style={{color: 'crimson'}} class="logo">Portfolio.<strong>TF</strong></div>
             <ul class="links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Work</a></li>
-                <li><a href="#blogs">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <label for="nav-toggle" class="icon-burger">

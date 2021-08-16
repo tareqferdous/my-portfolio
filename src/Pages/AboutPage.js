@@ -48,9 +48,9 @@ const AboutPage = () => {
                     {/* <p style={{ fontSize: '16px', paddingTop: '15px'}}>Name: Tareq Ferdous</p>
                     <p style={{ fontSize: '16px'}}>Email: tareqferdous10@gmail.com</p> */}
                     <p className="pt-2" style={{color:"#C0C0C0", fontSize: '16px', lineHeight: '1.6'}}> I am Tareq. I have completed my graduation in <strong>computer science and engineering</strong> from <strong>University of Asia Pacific</strong>. Along with my degree I have learnt javascript, react, node js and other various technologies. And for the last few months I have been developing web applications mostly using react and node js. I am equally interested in frontend and backend technologies and want to introduce myself as a MERN stack developer. I am enthusiastic to explore more about web development and advance my skills to work with a development company.</p>
-                    <p style={{fontSize: '16px'}}><i class="far fa-envelope"></i> : tareqferdous10Gmail.com</p>
+                    <p style={{fontSize: '16px'}}><i class="far fa-envelope"></i> : tareqferdous10gmail.com</p>
                     <p style={{fontSize: '16px'}}><i class="fab fa-whatsapp"></i> : +8801521310310</p>
-<div><button  style={{ fontSize: '16px', borderRadius:'5px', border: '2px solid orange', background: 'transparent', padding: '5px 10px',}}><a href="https://drive.google.com/file/d/1M6NC19yP75xMQ7O7FYQ1l-mGANzY-Cfa/view?usp=sharing" target="_blank" style={{textDecoration: 'none', color: 'white'}}>Download CV</a></button></div>
+<div><button  style={{ fontSize: '16px', borderRadius:'5px', border: '2px solid crimson', background: 'crimson', padding: '5px 10px',}}><a href="https://drive.google.com/file/d/1mO0dgGERurp-qScF-C_UGCCGXO3iXCDq/view?usp=sharing" target="_blank" style={{textDecoration: 'none', color: 'white'}}>Download CV</a></button></div>
 
 {/* 
                         <div className="icons">
@@ -106,7 +106,7 @@ const AboutPage = () => {
                     <div className="bars">
                         <div className="info">
                             <small style={{color: '#E8F8F5',fontSize:'14px'}}>Node JS</small>
-                            <small style={{color: '#E8F8F5',fontSize:'14px'}}>60%</small>
+                            <small style={{color: '#E8F8F5',fontSize:'14px'}}>50%</small>
                         </div>
                         <div className="line css"></div>
                     </div>
